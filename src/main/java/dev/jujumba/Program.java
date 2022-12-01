@@ -70,8 +70,9 @@ public class Program {
             case "group" -> System.out.println(strategy.group(souvenirs)); //Вывод всех производителей и их сувениров
 
             case "year" -> { //Выводим всех производителей, что производили сувениры в заданном году
-                int year = Integer.parseInt(args[2]);
-                System.out.println(strategy.getManufacturersByYear(year, souvenirs));
+                String name = args[2];
+                int year = Integer.parseInt(args[3]);
+                System.out.println(strategy.getManufacturersByYear(name, year, souvenirs));
             }
         }
     }

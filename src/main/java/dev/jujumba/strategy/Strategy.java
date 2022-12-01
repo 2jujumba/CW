@@ -22,7 +22,7 @@ public interface Strategy {
     void setSouvenir(int index, List<Souvenir> souvenirs);
     void deleteManufacturerAndHisSouvenirs(Manufacturer manufacturer, List<Manufacturer> manufacturers, List<Souvenir> souvenirs);
     List<Manufacturer> priceLowerThan(double price, List<Souvenir> souvenirs);
-    Set<Manufacturer> getManufacturersByYear(int year, List<Souvenir> list);
+    Set<Manufacturer> getManufacturersByYear(String name, int year, List<Souvenir> list);
     Map<Manufacturer, List<Souvenir>> group(List<Souvenir> souvenirs);
     List<Souvenir> getSouvenirsByCountry(String country, List<Souvenir> souvenirs);
     List<Souvenir> getSouvenirsByYear(int year, List<Souvenir> souvenirs);

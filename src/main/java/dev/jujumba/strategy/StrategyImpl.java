@@ -54,9 +54,9 @@ public class StrategyImpl implements Strategy {
     }
 
     @Override
-    public Set<Manufacturer> getManufacturersByYear(int year, List<Souvenir> list) {
+    public Set<Manufacturer> getManufacturersByYear(String name, int year, List<Souvenir> list) {
         return list.stream()
-                .filter(s -> s.getDateOfManufacture().getYear() == year)
+                .filter(s -> s.getDateOfManufacture().getYear() == year && s.getName().equals(name))
                 .map(Souvenir::getManufacturer)
                 .collect(Collectors.toSet());
     }
