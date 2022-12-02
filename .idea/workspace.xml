@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f168cdc8-1f3b-4d29-9f94-279686114ec5" name="Changes" comment="Initial commit">
+    <list default="true" id="f168cdc8-1f3b-4d29-9f94-279686114ec5" name="Changes" comment="Fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/jujumba/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/jujumba/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/jujumba/models/Souvenir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/jujumba/models/Souvenir.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +46,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -81,6 +89,12 @@
       <option name="presentableId" value="Default" />
       <updated>1669812329336</updated>
       <workItem from="1669904125379" duration="7937000" />
+      <workItem from="1669924982021" duration="2619000" />
+      <workItem from="1669931410118" duration="724000" />
+      <workItem from="1669932279288" duration="55000" />
+      <workItem from="1669932553101" duration="35000" />
+      <workItem from="1669932685543" duration="10000" />
+      <workItem from="1669970053193" duration="306000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1669910048588</created>
@@ -89,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669910048588</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix">
+      <created>1669925136770</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669925136770</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,7 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

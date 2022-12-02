@@ -34,9 +34,9 @@ public class Program {
     }
     @SneakyThrows
     private void initStrategy(Class<?> c) {
-        Arrays.stream(c.getInterfaces()).filter(i -> !i.equals(Strategy.class)).forEach(i -> {
-            throw new RuntimeException("Your strategy class should implement Strategy interface!");
-        });
+        Class[] interfaces = c.getInterfaces();
+        boolean implementsStrategy = Arrays.stream(interfaces).anyMatch(anInterface -> anInterface.equals(Strategy.class));
+        if (!implementsStrategy) throw new RuntimeException("Your strategy class should implement Strategy interface!");
 
         Optional<Constructor<?>> optionalConstructor = Arrays.stream(c.getConstructors()).filter(constructor -> constructor.getParameterCount() == 0).findFirst();
         strategy = optionalConstructor.isPresent() ? (Strategy) optionalConstructor.get().newInstance() : null;
